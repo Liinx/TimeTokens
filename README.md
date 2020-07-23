@@ -6,6 +6,6 @@ Time Tokens is a tokens plugin for Spigot/Paper Minecraft servers. It allows pla
 
 # Additional Info
 
-* If you can check out the pluing [here](https://www.spigotmc.org/resources/75441/) if you wish to purchase it.
+* You can check out the pluing [here](https://www.spigotmc.org/resources/75441/) if you wish to purchase it.
 * If you wish to learn more about the plugin you can check out the [wiki](https://github.com/Liinx/TimeTokens/wiki).
 * If you need support you can join my [discord](https://discord.gg/dmhJsrJ).
