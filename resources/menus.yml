@@ -1,0 +1,79 @@
+#Here you can create your custom GUIs that can be used to make a token shop.
+#This plugin has ability to create multiple menus each able to consist of multiple pages(inventories) that contain buttons(Items).
+#Few things to note menu and page names have to be unique meaning you cant have 2 menus with same name or 2 pages
+#with same name, and button IDs(slots) also have to be unique.
+
+#There are currently three types(on-click) of buttons that you can use:
+#command-performer - Allows you to set price and command that will be preformed when a player clicks on the button
+#(assuming that he has the specified amount of tokens).
+#page-opener - Opens a different page from the menus when the player click on the button.
+#decoration - This button types have no usable features they are simply used decorate the GUI and make it look nicer.
+
+menus:
+
+#  ExampleMenu:
+#    1:
+#      page-name: "First Page"
+#      page-size: 27
+#      is-main-page: true
+#      contents:
+#        1:
+#          display-name: "test item command"
+#          lore:
+#          - "line one of lore"
+#          - "line two of lore"
+#          - "line three of lore"
+#          material: STONE
+#          amount: 1
+#          is-enchanted: true
+#          on-click: command-performer
+#          command-mapping: heal
+#          token-price: 10
+#          close-on-click: true
+#        2:
+#          display-name: "test item page"
+#          lore:
+#            - "line one of lore"
+#            - "line two of lore"
+#            - "line three of lore"
+#          material: DIRT
+#          amount: 4
+#          is-enchanted: false
+#          on-click: page-opener
+#          destination: "Second Page"
+#        3:
+#          display-name: "I am a Decoration"
+#          lore:
+#          material: GLASS
+#          amount: 1
+#          is-enchanted: false
+#          on-click: decoration
+#    2:
+#      page-name: "Second Page"
+#      page-size: 9
+#      is-main-page: false
+#      contents:
+#        1:
+#          display-name: "test button"
+#          lore:
+#          material: REDSTONE
+#          amount: 1
+#          is-enchanted: false
+#          on-click: command-performer
+#          command-mapping: give5000, heal
+#          token-price: 5
+#        2:
+#          display-name: "test button"
+#          lore:
+#          material: PAPER
+#          amount: 1
+#          is-enchanted: false
+#          on-click: page-opener
+#          destination: "First Page"
+#        3:
+#          display-name: "another test button"
+#          lore:
+#          material: DIAMOND
+#          amount: 64
+#          is-enchanted: false
+#          on-click: decoration
