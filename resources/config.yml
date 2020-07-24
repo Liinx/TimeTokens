@@ -1,0 +1,132 @@
+#Welcome to the configuration file for Time Tokens here you can further customize Time Tokens.
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       General                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+#How often in seconds will the plugin check to see if players should receive the tokens.
+time-update-interval: 5
+
+#How often in seconds will the plugin save player data into the database(10-30 min is recommended).
+autosave-interval: 600
+
+#Prefix that will be set before every message send in the chat.
+message-prefix: '&7[&dTimeToken&7] '
+
+#Use this if you wish to change sign layout, keep in mind that the original format must be
+#followed for creating the sign. While this is how the sign will look after it has been created.
+sign-menu-1: '---------------'
+sign-menu-2: '> Click to open <'
+sign-menu-3: '%menuName%'
+sign-menu-4: '---------------'
+
+#Here you can create your custom commands that can be used with the execute command.
+#This can be useful if you have other plugins on the server that executed commands such as rewarding systems or shops.
+#Using execute command will ensure that that player is charged asked amount of tokens before executing the command.
+#The way you create custom command is show in the examples below.
+commands:
+#  heal: heal %playerName%
+#  give5000: eco give %playerName% 5000
+
+#Should operators be notified if there is a new version of the plugin out when they join the server.
+notify-operator-new-version: true
+
+############################################################
+# +------------------------------------------------------+ #
+# |                  Tokens and Time                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+#Should the player be notified once they receive the tokens for playing on the server.
+notify-player-on-token-award: false
+
+#How often in seconds will players receive tokens for the time spend on the server.
+sec-per-token: 900
+
+#How many tokens will the players receive each time.
+default-token-amount: 1
+
+#Custom name for the tokens in singular and plural form.
+token-name-singular: 'Time Token'
+token-name-plural: 'Time Tokens'
+
+#Should players receive daily(every 24h) bonus tokens.
+enable-daily-bonus: true
+#The amount of daily bonus players receives.
+daily-bonus-amount: 10
+
+#Here you can specify how many tokens will certain player groups receive for playing instead of the default value.
+#You can do it by following the example shown below.
+tokens-per-rank:
+#  VIP: 3
+
+############################################################
+# +------------------------------------------------------+ #
+# |                    AFK Detector                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+#Amount of seconds before player is considered to be AFK.
+afk-after: 600
+
+#Should all players be notified when someone goes AFK.
+broadcast-afk: false
+
+#Should players receive tokens even if they are AFK.
+reward-tokens-if-afk: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                      Database                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+#Database connecting info for player storing.
+host:
+port:
+database:
+username:
+password:
+table-prefix: TimeTokens
+use-ssl: false
+
+#What type of databse do you wish plugin to use currently you can chose YAML or MySQL.
+#Keep in mind that if you pick YAML you wont have BungeeCord support.
+#While using MySQL you can have BungeeCord and Single server setup.
+database-type: 'YAML'
+
+#If you are you are using this plugin in a bungeecord environment make sure that
+#all the server names are unique in each config file(survival, factions, skyblock, hub, etc).
+server-name: 'temp-server-name'
+
+############################################################
+# +------------------------------------------------------+ #
+# |           Migration and Advanced settings            | #
+# +------------------------------------------------------+ #
+############################################################
+
+#If this is set to true the plugin will try to find old data for players from earlier version and
+#attempt to migrate it to the new post 2.0.0 structures. If plugin detects old data once it has
+#decidec what do with it, after it finishes process it will remove those files/tables from database;
+migration: false
+
+#Here you can decide what will plugin do for the duplicate records that already exist in the new database:
+# SKIP - will skip duplicates.
+# REPLACE - will replace new duplicates with old ones.
+# MERGE - will add old data onto the existing record.
+#Note: If you use SKIP option with YAML setup it wont migrate any data, just set to one of
+#other two options if you wish to do it!
+duplicate-record-response: 'SKIP'
+
+#If this is true old databases and files will be removed after data migration is finished.
+delete-after-migration: false
+
+#If enabled it will send error stacktrace and some of the basic info about the server such as the server version,
+#plugin version etc. The purpose of this is to find and fix bugs faster, if you dont wish the plugin to
+#collect any data fell free to set it to false.
+enable-snooping: true
+
+#DO NOT change this option under any circumstances, unless you want database and config instability!
+config-version: 3
