@@ -1,0 +1,41 @@
+#Here you can change all the messages to your liking, you can even use your own languages if you wish.
+#Make sure to use the placeholders(case sensitive) provided by the plugin for more detailed messages.
+#Available placeholders:
+#%playerName% - players name
+#%timePlayed% - time player has spent on the server
+#%tokens% - amount of tokens related to the message
+#%totalToken% - players total amount of tokens
+#%menuName% - name of the menu
+#%commandMapping% - mapping for the custom commands
+#%command% - custom command that is being executed on the player
+#%dailyBonusRemaining% - time remaining until the next daily bonus reward
+#%nl% - line separator
+
+no-permission: 'You do not have permission to do that!'
+token-checked: '%playerName% has %tokens%.'
+token-checked-for-server: '%playerName% has earned %tokens% on %serverName% server.'
+time-checked: '%playerName% has played %timePlayed% on this network.'
+time-checked-for-server: '%playerName% has played %timePlayed% on %serverName% server.'
+server-name-not-found: '%serverName% server does not exist!'
+token-set: '%playerName% now has %totalToken%.'
+token-given: '%tokens% have been given to %playerName%, they now have %totalToken%.'
+token-taken: '%tokens% have been taken from %playerName%, they now have %totalToken%.'
+token-awarded: 'You have been awarded %tokens%!'
+execute-successful: 'The following command was executed for %playerName%: %command%.%nl%They wore charged %tokens% for this action.'
+gui-preform-command: 'Action preformed successfully you have %totalToken% left.'
+gui-not-enough-tokens: 'You do not have enough tokens(%tokens%) to do this!'
+command-mapping-not-found: 'Ops, something went wrong check please contact the staff team(or check console if you are one)!'
+sign-menu-created: '%menuName% sign menu has been created successfully!'
+is-afk: '%playerName% is now AFK.'
+no-longer-afk: '%playerName% is no longer AFK.'
+daily-bonus-received: 'You received %tokens% for playing today come back the next day for another reward!'
+daily-reward-notification: 'Your daily reward will be available to claim in %dailyBonusRemaining%!'
+player-not-found: '%playerName% player does not exist!'
+not-enough-tokens: '%playerName% does not have that many(%tokens%) tokens to take away!'
+invalid-number: 'Invalid number!'
+player-not-online: '%playerName% is not online!'
+invalid-menu: 'Menu with the name %menuName% does not exist!'
+no-menus: 'No menus wore found on this server please contact the staff team(or check console if you are one)!'
+no-page: 'Ops, something went wrong please contact the staff team!'
+player-only-command: 'This command can only be run by a player!'
+plugin-reloaded: 'Time Tokens has been reloaded.'
