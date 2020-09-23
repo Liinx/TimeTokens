@@ -12,6 +12,8 @@
 #%nl% - line separator
 
 no-permission: 'You do not have permission to do that!'
+token-gifted: 'You gifted %tokens% to %playerName%.'
+token-gift-received: '%playerName% gifted you %tokens%!'
 token-checked: '%playerName% has %tokens%.'
 token-checked-for-server: '%playerName% has earned %tokens% on %serverName% server.'
 time-checked: '%playerName% has played %timePlayed% on this network.'
