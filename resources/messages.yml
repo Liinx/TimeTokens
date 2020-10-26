@@ -9,6 +9,10 @@
 #%commandMapping% - mapping for the custom commands
 #%command% - custom command that is being executed on the player
 #%dailyBonusRemaining% - time remaining until the next daily bonus reward
+#%serverName% - current server name
+#%boostName% - boost name relevant to the message
+#%boostOwner% - player being affected by player boost
+#%boostActivator% - the one who bought/activated the boost
 #%nl% - line separator
 
 no-permission: 'You do not have permission to do that!'
@@ -23,6 +27,14 @@ token-set: '%playerName% now has %totalToken%.'
 token-given: '%tokens% have been given to %playerName%, they now have %totalToken%.'
 token-taken: '%tokens% have been taken from %playerName%, they now have %totalToken%.'
 token-awarded: 'You have been awarded %tokens%!'
+boost-tittle: '&a%boostName% unlocked!'
+booot-sub-tittle: '&4Enjoy the bonus tokens'
+player-boost-activated: '%boostActivator% unlocked %boostName% boost for %boostOwner%!'
+server-boost-activated: '%boostActivator% unlocked %boostName% boost on %serverName% server!'
+network-boost-activated: '%boostActivator% unlocked %boostName% boost on the entire network!'
+player-boost-expired: '%boostName% boost has expired for %boostOwner%!'
+server-boost-expired: '%boostName% boost has expired on %serverName% server!'
+network-boost-expired: '%boostName% boost has expired!'
 execute-successful: 'The following command was executed for %playerName%: %command%.%nl%They wore charged %tokens% for this action.'
 gui-preform-command: 'Action preformed successfully you have %totalToken% left.'
 gui-not-enough-tokens: 'You do not have enough tokens(%tokens%) to do this!'
@@ -30,11 +42,14 @@ command-mapping-not-found: 'Ops, something went wrong check please contact the s
 sign-menu-created: '%menuName% sign menu has been created successfully!'
 is-afk: '%playerName% is now AFK.'
 no-longer-afk: '%playerName% is no longer AFK.'
+boost-not-enabled: 'Boosting services are not enable on this %serverName%, check your config file to enable them.'
 daily-bonus-received: 'You received %tokens% for playing today come back the next day for another reward!'
 daily-reward-notification: 'Your daily reward will be available to claim in %dailyBonusRemaining%!'
 player-not-found: '%playerName% player does not exist!'
 not-enough-tokens: '%playerName% does not have that many(%tokens%) tokens to take away!'
 invalid-number: 'Invalid number!'
+invalid-boost: 'Invalid %boostName% boost!'
+invalid-command: 'Invalid command!'
 player-not-online: '%playerName% is not online!'
 invalid-menu: 'Menu with the name %menuName% does not exist!'
 no-menus: 'No menus wore found on this server please contact the staff team(or check console if you are one)!'
