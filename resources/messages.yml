@@ -1,5 +1,6 @@
 #Here you can change all the messages to your liking, you can even use your own languages if you wish.
 #Make sure to use the placeholders(case sensitive) provided by the plugin for more detailed messages.
+#
 #Available placeholders:
 #%playerName% - players name
 #%timePlayed% - time player has spent on the server
@@ -13,6 +14,7 @@
 #%boostName% - boost name relevant to the message
 #%boostOwner% - player being affected by player boost
 #%boostActivator% - the one who bought/activated the boost
+#%boostMultiplierSum% - combined effect of all boosts affecting the player
 #%nl% - line separator
 
 no-permission: 'You do not have permission to do that!'
@@ -28,7 +30,10 @@ token-given: '%tokens% have been given to %playerName%, they now have %totalToke
 token-taken: '%tokens% have been taken from %playerName%, they now have %totalToken%.'
 token-awarded: 'You have been awarded %tokens%!'
 boost-tittle: '&a%boostName% unlocked!'
-booot-sub-tittle: '&4Enjoy the bonus tokens'
+boost-sub-tittle: '&4Enjoy the bonus tokens'
+check-active-boosts: 'Currently active boosters on %serverName% server are:'
+check-active-boosts-player: '%playerName% is currently being affected by the following boosters:'
+combine-effect-of-booster: 'Combined effect of all this boosters on %playerName% is x%boostMultiplierSum%.'
 player-boost-activated: '%boostActivator% unlocked %boostName% boost for %boostOwner%!'
 server-boost-activated: '%boostActivator% unlocked %boostName% boost on %serverName% server!'
 network-boost-activated: '%boostActivator% unlocked %boostName% boost on the entire network!'
@@ -43,6 +48,8 @@ sign-menu-created: '%menuName% sign menu has been created successfully!'
 is-afk: '%playerName% is now AFK.'
 no-longer-afk: '%playerName% is no longer AFK.'
 boost-not-enabled: 'Boosting services are not enable on this %serverName%, check your config file to enable them.'
+no-active-boosts: 'There are no active boosts on %serverName% server!'
+player-not-affected-by-boosts: 'There are no boosts that are affecting %playerName% on %serverName% server!'
 daily-bonus-received: 'You received %tokens% for playing today come back the next day for another reward!'
 daily-reward-notification: 'Your daily reward will be available to claim in %dailyBonusRemaining%!'
 player-not-found: '%playerName% player does not exist!'
