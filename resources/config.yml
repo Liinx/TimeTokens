@@ -156,4 +156,4 @@ delete-after-migration: false
 enable-snooping: true
 
 #DO NOT change this option under any circumstances, unless you want database and config instability!
-config-version: 5
+config-version: 6
