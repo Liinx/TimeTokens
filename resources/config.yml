@@ -130,7 +130,7 @@ server-name: 'temp-server-name'
 
 ############################################################
 # +------------------------------------------------------+ #
-# |           Migration and Advanced settings            | #
+# |                  Migration settings                  | #
 # +------------------------------------------------------+ #
 ############################################################
 
@@ -150,10 +150,5 @@ duplicate-record-response: 'SKIP'
 #If this is true old databases and files will be removed after data migration is finished.
 delete-after-migration: false
 
-#If enabled it will send error stacktrace and some of the basic info about the server such as the server version,
-#plugin version etc. The purpose of this is to find and fix bugs faster, if you dont wish the plugin to
-#collect any data fell free to set it to false.
-enable-snooping: true
-
 #DO NOT change this option under any circumstances, unless you want database and config instability!
-config-version: 7
+config-version: 8
